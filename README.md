@@ -35,6 +35,32 @@ When no motion is detected for a certain time, it turns OFF the lights in revers
 
 ---
 
+
+### 🔌 Circuit Diagram
+
+Below is the connection diagram for the Smart Hallway Lighting System:
+
+![Circuit Diagram](with-IR.png)
+
+**Connections Overview:**
+- **PIR Sensor:**
+  - VCC → 5V (Arduino)
+  - GND → GND
+  - OUT → Digital Pin (e.g., D2)
+
+- **LEDs (Hallway Lights Simulation):**
+  - Connected to Digital Pins D3–D10 via current-limiting resistors
+
+- **Relay Module (Optional):**
+  - IN → Arduino output pin (for controlling real bulbs)
+  - VCC → 5V
+  - GND → GND
+
+- **Power Supply:**
+  - USB or 5V external supply
+
+---
+
 ### 🧾 Code Explanation (Embedded C for Arduino)
 - The PIR sensor output is read using a digital input pin.  
 - LEDs or relays are controlled using digital output pins.  
