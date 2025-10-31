@@ -1,0 +1,25 @@
+# Ignore system and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+*.bak
+*.tmp
+
+# Ignore Arduino build files
+*.elf
+*.hex
+*.eep
+*.d
+*.o
+
+# Ignore compiled object and cache files
+__pycache__/
+*.obj
+*.exe
+*.bin
+
+# Ignore logs
+*.log
+
+# Ignore zip archives
+*.zip
